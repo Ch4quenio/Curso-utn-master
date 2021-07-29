@@ -1,0 +1,8 @@
+Maquetacion
+tablas 1996
+Floats --->?
+ 2008/2010 ------> Flexbox y grid
+2017 Grillas.
+
+flex box mas contenido es mas espacio
+cero no lleva unidad.

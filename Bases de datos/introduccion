@@ -1,0 +1,61 @@
+Bases de datos
+
+Los datos foraneos son los que hacen referencia a datos primarios
+Los datos primarios es un dato unico.
+
+
+SQL:
+Structured query language
+Es un lenguaje de acceso a bases de datos
+
+Query: Es lo que le da la informacion a la base de datos de que queremos buscar.
+
+
+Tipos de datos
+Numericos : 1,12,3,5454,123234...
+Alfanumericos/strings : "Hello world", "This is my first time programming at C++"
+Booleano: true / false
+Fecha : YYYY-MM-DD; fecha comun
+
+Instrucciones basicas:
+INSERT -> Agregar un nuevo registro: INSERT INTO nombre_tabla VALUES (valor1,valor2...)
+UPDATE -> Cambiamos el valor de un registro. UPDATE nombre_tabla SET nombre_columna = nuevo_valor
+ WHERE nombre_columna = nuevo_valor
+DELETE -> Eliminamos un valor del registro. DELETE FROM nombre_tabla WHERE nombre_columna = el valor de la columna que se quiera eliminar
+SELECT -> Filtra datos y en base a eso crea una nueva tabla. SELECT nombre_columna FROM nombre_tabla
+WHERE filtro_
+LIKE ->  Filtra por letras
+ORDER BY ->  SELECT *  FROM nombre_tabla ORDER BY apellido (Ordena alfabeticamente si el dato es
+un string, o por numeros de menor a mayor si es un dato numerico si queres lo contrario o sea de mayor
+ a menor o de la Z a la A al final de la instruccion pones DESC)
+SUM -> SELECT sum(nombre_columna) FROM nombre_tabla. Sirve para sumar todo el valor de una columna.
+AVG -> SELECT avg(nombre_columna) FROM nombre_tabla. Promedio de los numeros.
+COUNT -> SELECT count(nombre_columna) FROM nombre_tabla. Cuenta todos los campos dentro de la columna.
+Para sumar todos los libros de una biblioteca por ejemplo
+GROUP BY -> SELECT * FROM libros GROUP BY autor. Cuando encuentre libros con autores repetidos
+solamente va a mostrar en pantalla el primero que encuentre, a partir del primer libro ya no habra
+autores repetidos y se ignorara los demas titulos del mismo autor.
+HAVING ->  SELECT * FROM nombre_tabla HAVING editorial = "Planeta". Se selecciona todos los libros
+que la editorial sea planeta. Muy parecido a WHERE
+DISTINCT -> SELECT DISTINCT nombre_columna FROM nombre_tabla. Hace lo mismo que GROUP BY.
+ No repite campos, encuentra uno y deja de buscar por ese campo y pasa al siguiente.
+LIMIT -> SELECT * FROM libros LIMIT 0,4. Muestra todos los resultados de la tabla
+libros pero solo llega hasta la columna especificada  y arranca de la columna especificada.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ORDER BY
+1)   Mostrar una lista de los usuarios ordenada por edad de manera descendente
+2)   Mostrar a todos los Estudiantes ordenados alfabéticamente (ascendente)
+3)   Mostrar una lista de todos los estudiantes ordenada por apellido ascendente, y si tienen el mismo apellido, ordenados de menor a mayor edad.

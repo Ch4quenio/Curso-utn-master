@@ -1,0 +1,10 @@
+<%= Se usa para imprimir contenido
+<%  Para generar una instruccion. IF o FOR.
+<%- Parciales (import) para llamar a los archivos fijos como el header o el footer
+
+El cierre siempre es el mismo %>, lo unico que cambia es la apertura.
+
+Si clonamos una carpeta con express y la queremos usar en otra computadora
+tenemos que abrir la consola y escribir npm install. Con esta instruccion
+lo que hace npm es descargar todas las dependencias del proyecto para que todo
+funcione correctamente.

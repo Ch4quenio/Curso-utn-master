@@ -1,0 +1,29 @@
+body{
+  background-color:  tomato
+}
+
+.padre{
+  background: red;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.hijo{
+  background: yellow;
+  flex-grow: 1;
+  min-width: 130px;
+}
+
+.hijo1{
+  background: green;
+}
+.hijo2{
+  background: purple
+}
+
+.hijo3{
+  background: blue
+}
+.hijo4{
+  background: white
+}

@@ -1,0 +1,22 @@
+TYPESCRIPT
+
+¿Qué es ?
+
+Es un lenguaje de programacion que compila JavaScript. Vendria a ser como un SASS.
+
+¿Para que sirve?
+
+Se utiliza como base para angular.
+
+Generalidades:
+
+Para empezar a usar TS primero hay que instalarlo ("npm i typescript"), crear un archivo con la extension .ts y
+luego ejecutarlo mediante "tsc nombre_archivo.ts -w". Ahi crea automaticamente un archivo .js que compila el archivo anterior.
+
+En Javascript nativo comun y corriente optar por no especificar el tipo de variable. (let,var o const).
+
+nombre = "Lisandro" Esto es aceptado en JS
+
+Pero en TS NO!.
+
+En typescript si o si tenemos que especificar que tipo de variable es.

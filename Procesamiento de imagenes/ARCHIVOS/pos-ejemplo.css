@@ -1,0 +1,57 @@
+
+body {
+    background-color: cadetblue;
+}
+
+.padre {
+    background-color: tomato;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+
+    /*
+        Si un elemento absoluto tiene un padre relativo entonces su punto 0 0 pasa a ser la esquina superior izquierda del elemento padre
+    */
+    position: relative;
+}
+
+.hijo {
+    background-color: yellowgreen;
+    height: 150px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+    * static:
+        - valor por default
+        - no permite trabajar capas
+    * relative:
+        - permite trabajar capas
+        - Mantiene su espacio original
+        - El punto 0 0 del relativo es... su espacio original
+        - top / bottom / right / left
+    * absolute:
+        - permite trabajar capas
+        - Pierde su espacio original
+        - El punto 0 0 del absoluto es... la esquina superior izquierda de... el primer elemento padre NO estático que encuentre ¯\_(ツ)_/¯
+        - Pierde su ancho :(
+*/
+
+.tres {
+    background-color: whitesmoke;
+    position: absolute;
+    width: 100px;
+    left: 40px;
+    top:  60px;
+}
+
+/*
+    ⭐
+    Menúes desplegables
+    ... siempre que necesite capas
+*/

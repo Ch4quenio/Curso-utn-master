@@ -1,0 +1,21 @@
+body{
+color: white;
+background: #00aae4;
+}
+.table{
+  background: aliceblue;
+  color: black;
+  border: 1px solid black
+}
+/*
+tr:first-child{
+  background: aqua;
+}
+td:last-child{
+  background: pink */
+}
+
+
+tr:nth-child(3 + 2){
+background: red;
+}

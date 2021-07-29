@@ -1,0 +1,210 @@
+/*
+    Variables CSS / Custom properties
+    super-azul: #72c0c0
+*/
+
+/* El punto más alto del documento */
+:root {
+    /* Declara las variables
+        Darles un nombre y su contenido
+
+        Las declaramos en la raíz / root para que existan en todo el documento
+    */
+    --azul: #02c2c2;
+    --naranja: #FE6F0F;
+    --amarillo: #f8c009;
+    --negro: #000;
+    --blanco: #FFF;
+    --espacio: 30px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Utilizamos la variable con var() */
+    background-color: var(--negro);
+    background-image: url(images/pattern.jpg);
+    /*
+    repeat (default) | no-repeat | repeat-x | repeat-y
+    background-repeat: repeat;
+
+    Imagen grande que cubre todo el fondo
+    background-size: cover;
+    */
+    font-family: Arial, Helvetica, sans-serif;
+}
+img{
+  max-width:100%;
+}
+/*
+h1 {
+    background-color: var(--blanco);
+    color: var(--azul);
+}
+*/
+
+/*
+    Si separamos varios selectores con , les aplicamos las mismas propiedades a esos selectores
+*/
+.cabecera, .contenedor {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 5px 0;
+    color: var(--naranja);
+}
+
+.contenedor {
+    background-color: var(--blanco);
+    /* Agregamos border-radius también al contenedor para que no se vea la esquina blanca */
+    border-radius: 10px 10px 0 0;
+}
+
+/*
+    -------------- Navegación --------------
+*/
+
+.nav {
+    background-color: var(--naranja);
+    padding: 10px;
+    padding-left: 45px;
+    display: flex;
+    border-radius: 10px 10px 0 0;
+
+    /* Separar entre la botonera y lo que esté abajo */
+    margin-bottom: 20px;
+}
+
+.nav-lista,
+.nav-form {
+    flex-grow: 1;
+}
+
+.nav-lista {
+    list-style: none;
+    display: flex;
+}
+/* .input::placeholder */
+.nav-lista_item-link {
+    display: block;
+    padding: 4px 8px;
+    border-right: 1px solid var(--amarillo);
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--blanco);
+}
+.nav-lista_item-link:hover {
+    text-decoration: underline;
+}
+
+.nav-form {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*
+    -------------- Slider de imágenes --------------
+*/
+
+.slider {
+    /* Si quiero centrar una imagen sola puedo usar text-align: center; en el elemento padre */
+    text-align: center;
+
+    /* Separo entre el slider y el bloque de abajo */
+    margin-bottom: 20px;
+}
+
+/*
+    -------------- Principal --------------
+*/
+.principal {
+    background-color: mediumorchid;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    padding:4rem;
+
+}
+
+.principal-categorias {
+    background-color: salmon;
+}
+.principal-productos {
+    background-color: skyblue;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--espacio);
+}
+
+.producto {
+    background-color: steelblue;
+}
+
+.flex-por-la-street{
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-por-la-street p{
+margin: 1rem
+}
+
+
+.flex-por-la-street img{
+margin: 1rem
+}
+
+/* News */
+.news{
+  margin: auto;
+  margin-bottom:1rem;
+  margin-top:1rem;
+  max-width: 940px;
+background-color: white;;
+border-radius: 6px;
+border: 1px solid black;
+padding: 10px
+}
+
+.new-flex{
+  display: flex;
+  justify-content: space-between;
+}
+
+.email-flex{
+  display: flex;
+align-items: center;
+}
+.email-flex input{
+  height: 30px;
+  margin: 1rem;
+}
+
+.nav-flex{
+  display: flex;
+}
+.nav-flex img{
+  margin: 1rem;
+}
+.newsletter{
+  font-weight: 700;
+}
+
+.asd{
+  position: relative;
+  left:50px;
+}
+
+.news img{
+  width: 70px;
+object-fit: cover;
+}

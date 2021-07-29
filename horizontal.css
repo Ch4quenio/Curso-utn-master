@@ -1,0 +1,35 @@
+body{
+  background: purple;
+}
+
+.lista-item{
+  background: white;
+  flex-grow:1;
+
+}
+
+.lista{
+  max-width: 1000px;
+margin: auto;
+  background: red;
+  list-style: none;
+padding: 0;
+display: flex;
+text-align: center;
+flex-wrap:wrap;
+min-width:130px;
+}
+
+.list_item_link{
+  background: green;
+  display: block;
+  padding: 2rem;
+  text-decoration:none;
+  color:white;
+}
+
+.list_item_link:hover{
+  background: green;
+  display: block;
+  border: 1px dashed white;
+}

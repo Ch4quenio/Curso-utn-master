@@ -1,0 +1,28 @@
+body{
+  background: thistle
+}
+
+
+
+
+
+.lista{
+  background: red;
+  padding: 0;
+}
+
+.lista-item{
+  list-style: none;
+  background: blue;
+}
+
+.list_item_link{
+  background: green;
+  display: block;
+    border: 1px dashed red;
+}
+.list_item_link:hover{
+  background: black ;
+  display: block;
+
+}

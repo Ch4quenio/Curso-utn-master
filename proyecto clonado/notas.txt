@@ -1,0 +1,5 @@
+<%= Se usa para imprimir contenido
+<%  Para generar una instruccion. IF o FOR.
+<%- Parciales (import) para llamar a los archivos fijos como el header o el footer
+
+El cierre siempre es el mismo %>, lo unico que cambia es la apertura.
